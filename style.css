@@ -85,4 +85,26 @@ body {
     transform: translateY(2px); /* Легкое "вдавление" кнопки при клике */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Меньшая тень при клике */
   }
-  
+  /* Стили для кнопки */
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #16a085; /* Зеленый цвет кнопки */
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px; /* Скругленные углы */
+  transition: background-color 0.3s, transform 0.3s ease;
+}
+
+/* Эффект наведения на кнопку */
+.btn:hover {
+  background-color: #16a085; /* Темнее при наведении */
+  transform: scale(1.05); /* Немного увеличиваем размер кнопки */
+}
+
+/* Эффект нажатия */
+.btn:active {
+  transform: scale(0.98); /* Уменьшаем кнопку при нажатии */
+}

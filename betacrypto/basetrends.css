@@ -1,0 +1,100 @@
+/* Общие стили для страницы */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Стили для контейнера контента */
+.content {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+    overflow: auto; /* Убирает проблемы с прокруткой */
+}
+
+/* Стили для контейнера всех карточек трендов */
+.trend-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Карточки трендов */
+.trend-card {
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 16px;
+    padding: 15px;
+    width: 280px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Эффект свечения */
+}
+
+/* Эффект свечения при наведении на карточку */
+.trend-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(26, 188, 156, 1), 0 0 40px rgba(26, 188, 156, 0.7); /* Плавное свечение */
+}
+
+/* Подсветка активных трендов */
+.trend-card.active {
+  border: 3px solid #1abc9c;  /* Зеленая рамка */
+  box-shadow: 0 0 20px rgba(26, 188, 156, 1), 0 0 40px rgba(26, 188, 156, 0.7);  /* Свечение для активных трендов */
+  transform: scale(1.05);  /* Немного увеличиваем размер */
+  transition: all 0.3s ease;
+}
+
+/* Изображения трендов */
+.trend-image {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: contain;
+    margin-bottom: 12px;
+}
+
+/* Белый цвет для заголовков */
+.trend-card h2 {
+    color: white; /* Белый цвет для заголовков */
+}
+
+/* Белый цвет для описания */
+.trend-card p {
+    color: white; /* Белый цвет для описаний */
+}
+
+/* Фон сайта */
+body {
+    background-image: url('images/background.jpg'); /* Укажи путь к твоему фону */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Кнопка возврата на главную */
+.back-to-home {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Стили кнопки возврата */
+.back-btn {
+    text-decoration: none;
+    color: white;
+    background-color: #1abc9c;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: #16a085;
+}
+
+/* Для плавной прокрутки */
+html {
+  scroll-behavior: smooth;
+}
